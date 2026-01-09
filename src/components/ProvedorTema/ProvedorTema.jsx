@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 
-const tema = {
-    color:{
+const theme = {
+    colors:{
 
         white: '#FFFFFF',
         warning: '#FF0E0E',
@@ -34,13 +34,14 @@ const tema = {
     spacing:{
         s: '16px',
         l: '32px',
-    }
+    },
+    fontFamily: "'Montserrat', sans-serif",
 }
 
 export const ProvedorTema = ({ children }) => {
 
     return (
-      <ThemeProvider theme={tema}>
+      <ThemeProvider theme={theme}>
          {children}
       </ThemeProvider>
     );
