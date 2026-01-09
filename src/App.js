@@ -1,13 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
 import { Styles } from './components/GlobalStyle/Styles';
+import { Card } from './components/Card/Card';
+import { ProvedorTema } from './components/ProvedorTema/ProvedorTema';
 
 function App() {
   return (
-    <div className="App">
+    <ProvedorTema>
       <Styles />
-     <h1>Freelando</h1>
-    </div>
+      <Card>
+        <h1>Freelando</h1>
+      </Card>
+    </ProvedorTema>
   );
 }
 
